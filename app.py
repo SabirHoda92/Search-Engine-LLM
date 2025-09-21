@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-###
 
 
-#Arxiv and Wikipedia Wrapper Tools
+
+###Arxiv and Wikipedia Wrapper Tools
 arix_wrapper = ArxivAPIWrapper(top_k_results=1,doc_content_chars_max=200)
 
 arix = ArxivQueryRun(api_wrapper=arix_wrapper)
@@ -29,7 +29,7 @@ search = DuckDuckGoSearchRun(name="search")
 
 st.title("Langchain - Chat with search")
 
-#sidebar for setting
+###sidebar for setting
 st.sidebar.title("setting")
 api_key = st.sidebar.text_input("Enter Your Groq API Key:",type="password")
 
@@ -75,6 +75,7 @@ if prompt:= st.chat_input(placeholder="what is machine learning"):
     
     
     
+
 
 
 
